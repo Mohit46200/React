@@ -19,7 +19,7 @@ function App() {
 
   return (
   <>
-    <h1>Counter value {counter}</h1>
+    <h1 >Counter value {counter}</h1>
     <button onClick={add}>Add value</button>
     <button onClick={remove}>Remove value</button>
   </>
