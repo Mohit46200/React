@@ -2,7 +2,7 @@ import { useState } from 'react'
 function App() {
   return (
     <>
-    <h1 className='bg-amber-800 text-amber-100'>Hello</h1>
+    <h1 className='bg-amber-400 text-amber-100'>Hello</h1>
     </>
   )
 }
