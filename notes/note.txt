@@ -1,0 +1,5 @@
+html mai hum anchor tag ki jagah <Link> tag ka use krte hai kiyuki anchor tag pure page ko reload krta hai aur link bas re-reder krta hai  (see in react notes 07)
+
+
+
+

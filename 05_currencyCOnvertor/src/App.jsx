@@ -32,7 +32,7 @@ function App() {
         <div id="from" class="converter">
           <h3>From</h3>
           <h4>Currency Type</h4>
-          <input id='value' type="text" onChange={(e)=>setFromvalue(e.target.value)}/>
+          <input id='value' type="text" value={fromvalue} onChange={(e)=>setFromvalue(e.target.value)}/>
           <select id="currency" value={from} onChange={(e) => {
             setFrom(e.target.value)
             }} >

@@ -1,10 +1,10 @@
-import { useState, useCallback, useEffect, useRef } from 'react'
+import { useState, useCallback, useEffect} from 'react'
 function App() {
   const [password,setPassword]=useState("")
   const [range,setRange]=useState(8)
   const [numberAllowed, setNumberAllowed] = useState(false)
   const [charAllowed, setCharAllowed] = useState(false)
-  const password_Generate=useCallback(function(){
+  const password_Generate=useCallback(function(){             //ye function ko banata hai
     let rand="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
     let num="1234567890"
     let sym="!@#$%^&*`"
@@ -25,7 +25,7 @@ function App() {
     window.navigator.clipboard.writeText(password)
   }, [password])
 
-    useEffect(function(){
+    useEffect(function(){       //ye function ko chalata hai
       password_Generate()
     },[range,numberAllowed,charAllowed])
   return (
