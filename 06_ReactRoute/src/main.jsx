@@ -2,10 +2,11 @@ import React from 'react'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/layout.jsx'
 import Home from './components/home.jsx'
+import About from './components/about.jsx'
+import Contact from './components/contactus.jsx'
 
 const router=createBrowserRouter([
   {
@@ -15,6 +16,14 @@ const router=createBrowserRouter([
       {
         path: '',
         element: <Home/>
+      },
+      {
+        path: '/about',
+        element: <About/>
+      },
+      {
+        path:'/contact_us',
+        element:<Contact/>
       }
     ]
   }
