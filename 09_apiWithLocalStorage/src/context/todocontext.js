@@ -6,17 +6,17 @@ export const Todocontext = createContext({
         {
             id:1,
             todo:"todo msg",
-            completed: flase,
+            completed: false,
         }
     ],
     addTodo: function(todo){},
     updateTodo: function(id, todo){},
-    delete: function(id){},
+    deleteTodo: function(id){},
     toggleComplete:function(id){}
 })
 
 
-export const Usetodo =function(){
+export const UseTodo = function(){
     return useContext(Todocontext)
 }
 
