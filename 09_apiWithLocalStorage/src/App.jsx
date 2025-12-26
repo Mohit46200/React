@@ -37,6 +37,7 @@ function App() {
         localStorage.setItem("todos" , JSON.stringify(todos))
     },[todos])
 
+    
   return (
     <Todoprovider value={{todos,addTodo,updateTodo,toggleComplete,deleteTodo}}>
         <div className="bg-[#172842] min-h-screen py-8">
